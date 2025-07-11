@@ -335,10 +335,60 @@ int main(){
        return 0; 
 }
 
-*/
+
 // 21th Program 
 #include<iostream>
 using namespace std;
 int main(){
+      cout << "learn with codewithutkrisht";
+      return 0; 
       
+}
+
+
+// 22th Program 
+
+#include<iostream>
+using namespace std;
+int main (){
+    int age = 25; // Integer
+    float pi = 3.14; // Floating-point
+    char initial = 'A'; // Character
+    bool isStudent = true; // Boolean
+
+cout << "Age: " << age << endl;
+cout << "Pi: " << pi << endl;
+cout << "Initial: " << initial << endl;
+cout << "Is Student: " << isStudent << endl;
+
+return 0;
+}
+*/
+// 23th Program 
+#include<iostream>
+using namespace std;
+int main (){
+      int ch;
+      cout<<"Enter user choice:";
+      cin>>ch;
+      switch(ch)
+      {
+            case 0:cout<<"Monday";
+            break;
+            case 1:cout<<"Tuesday";
+            break;
+            case 2:cout<<"Wednesday";
+            break;
+            case 3:cout<<"Thursday";
+            break;
+            case 4:cout<<"Friday";
+            break;
+            case 5:cout<<"Saturday";
+            break;
+            case 6:cout<<"Sunday";
+            break;
+            
+             default: cout<<"Invalid Number";
+      }
+      return 0; 
 }
