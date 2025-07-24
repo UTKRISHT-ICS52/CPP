@@ -363,7 +363,7 @@ cout << "Is Student: " << isStudent << endl;
 
 return 0;
 }
-*/
+
 // 23th Program 
 #include<iostream>
 using namespace std;
@@ -392,3 +392,4 @@ int main (){
       }
       return 0; 
 }
+*/
