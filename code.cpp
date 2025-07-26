@@ -36,7 +36,7 @@ int value = grade;
 cout << value   <<endl;
 return 0;
 }
-*/
+
 
 #include<iostream>
 using namespace std;
@@ -47,3 +47,47 @@ int main (){
     cout<<"Your age is :" << age;
     return 0; 
 }
+    
+#include<iostream>
+using namespace std;
+int main(){
+    int n = 25;
+    if(n>=0){
+        cout << "n is a postive number\n";
+    }
+    else{
+        cout << "n is negative number\n";
+    }
+    return 0;
+}  
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int age;
+    cout << "enter age:";
+    cin >> age;
+    if(age>=18){
+        cout << "You can vote\n";
+    }
+    else{
+        cout << "You can not vote\n";
+    }
+    return 0;
+}   
+*/
+#include<iostream>
+using namespace std;
+int main(){
+      int n ;
+      cout <<"Enter a Number";
+      cin >>n;
+      if(n%2 ==0){
+      cout << "even\n";
+      }
+      else{
+        cout << "odd\n";
+      }
+    return 0;
+}  
