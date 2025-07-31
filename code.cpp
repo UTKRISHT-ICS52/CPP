@@ -76,7 +76,7 @@ int main(){
     }
     return 0;
 }   
-*/
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -91,3 +91,55 @@ int main(){
       }
     return 0;
 }  
+
+
+#include<iostream>
+using namespace std;
+int main(){
+      int n ;
+      cout <<"Enter a Number";
+      cin >>n;
+      if(n%2 == 0){
+      cout << "even\n";
+      cout << "bye\n";
+      }
+      else{
+        cout << "odd\n";
+      }
+    return 0;
+} 
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int marks;
+    cout << "Enter marks :";
+    cin >> marks;
+
+    if(marks >=90){
+        cout << "A\n";
+    } 
+    else if (marks >=80 && marks <90){
+        cout << "B\n";
+    }else {
+        cout << "C\n";
+    }
+    return 0; 
+}
+
+*/
+#include<iostream>
+using namespace std;
+int main(){
+     char ch;
+     cout << "Enter a character :";
+     cin >> ch;
+     if(ch>='a' && ch<='z'){
+        cout << "lowercase\n";
+     } else{
+        cout << "Uppercase\n";
+     }
+    return 0;
+}
