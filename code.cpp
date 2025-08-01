@@ -129,7 +129,7 @@ int main(){
     return 0; 
 }
 
-*/
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -143,3 +143,87 @@ int main(){
      }
     return 0;
 }
+ 
+#include<iostream>
+using namespace std;
+int main(){
+     char ch;
+     cout << "Enter a character :";
+     cin >> ch;
+     if(ch>= 65 && ch<= 90){
+        cout << "uppercase\n";
+     } else{
+        cout << "lowercase\n";
+     }
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n = -56;
+    cout << (n>=0 ? "positive" : "negative")<< endl;
+    return 0; 
+}
+
+
+#include<iostream>
+using namespace std;
+int main (){
+    int count =1;
+    while(count <=5){
+        cout << count << "";
+        count++;
+        
+    }
+    cout << endl;
+    return 0; 
+}
+
+
+#include<iostream>
+using namespace std;
+int main (){
+    int n = 4;
+    for(int i =1; i<=n; i++){ // outer loop 
+        for(int j =1; j<=n; j++){ // inner loop
+            cout <<j;
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main (){
+    int n = 4;
+    for(int i =1; i<=n; i++){ // outer loop 
+        for(int j =1; j<=n; j++){ // inner loop
+            cout <<"*";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+*/
+
+#include<iostream>
+using namespace std;
+int main (){
+    int n = 3;
+    int num = 1;
+
+    for( int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            cout<< num <<"";
+            num++;
+        }
+        cout << endl;
+    }
+    cout<< "after pattern :"<<num<<endl; // 10 
+    return 0;
+} 
+
