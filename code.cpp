@@ -350,7 +350,7 @@ int main(){
     cout<<(4<<1);
     return 0; 
 }
-*/ 
+
 
 // Bitwise >> (Right shift op.)
 #include<iostream>
@@ -358,5 +358,52 @@ using namespace std;
 int main(){
     
     cout<<(4>>1);
+    return 0; 
+}
+
+// homework 
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a = 6, b = 10;
+    cout<<(a&b);
+    return 0; 
+}
+
+// home work
+#include<iostream>
+using namespace std;
+int main(){
+    int a = 6, b = 10;
+    cout<<(a|b);
+    return 0; 
+}
+
+// homework
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a = 6, b = 10;
+    cout<<(a^b);
+    return 0; 
+}
+// homework
+
+#include<iostream>
+using namespace std;
+int main(){
+   
+    cout<<(10<<2);
+    return 0; 
+}
+//homework
+*/
+#include<iostream>
+using namespace std;
+int main(){
+   
+    cout<<(10>>1);
     return 0; 
 }
