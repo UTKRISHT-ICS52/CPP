@@ -399,7 +399,7 @@ int main(){
     return 0; 
 }
 //homework
-*/
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -407,3 +407,14 @@ int main(){
     cout<<(10>>1);
     return 0; 
 }
+
+// practice 
+*/
+#include<iostream>
+using namespace std;
+int main (){
+    cout<<(10>>6);
+    return 0; 
+
+}
+    
