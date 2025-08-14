@@ -409,7 +409,7 @@ int main(){
 }
 
 // practice 
-*/
+
 #include<iostream>
 using namespace std;
 int main (){
@@ -417,4 +417,95 @@ int main (){
     return 0; 
 
 }
+
+#include<iostream>
+using namespace std;
+int main (){
+    cout<< sizeof(int) ;
+    return 0; 
+
+}
+
+
+//Data type modifier program 
+#include<iostream>
+using namespace std;
+int main (){
+    cout<< sizeof(float);
+    return 0; 
+
+}
+
+#include<iostream>
+using namespace std;
+int main (){
+    cout<< "utkrisht";
+    return 0; 
+
+}
+
+#include<iostream>
+using namespace std;
+int main (){
+    cout<< sizeof(double);
+    return 0; 
+
+}
+
+#include<iostream>
+using namespace std;
+int main (){
+    unsigned int x = -10;
+    cout<< x <<endl;
+    return 0; 
+
+}
     
+#include<iostream>
+using namespace std; 
+class age{
+    int a;
+    public:
+    void setAge(int age){
+        a = age;
+    }
+    int getAge(){
+        return a;
+    }
+};
+
+int main(){
+    age obj;
+    obj.setAge(20);
+    cout << "Age: " << obj.getAge() << endl;
+    return 0;
+}
+*/
+
+
+
+
+// object oriented programming lab program -1 
+#include<bits/stdc++.h>
+using namespace std;
+class age
+{
+public:
+float num;
+age (){
+num=0;
+}
+age (int a){
+num=a;
+}
+void disp(){
+cout<<num<<endl;
+}
+};
+int main(){
+age age_default;
+age age_insert(20);
+age_default.disp();
+age_insert.disp();
+return 0;
+}
