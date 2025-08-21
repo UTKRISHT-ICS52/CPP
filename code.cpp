@@ -1,4 +1,4 @@
-/*
+
 #include<iostream>
 using namespace std;
 int main (){
@@ -480,13 +480,14 @@ int main(){
     cout << "Age: " << obj.getAge() << endl;
     return 0;
 }
-*/
+
 
 
 
 
 // object oriented programming lab program -1 
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+#include<vector>
 using namespace std;
 class age
 {
@@ -509,3 +510,105 @@ age_default.disp();
 age_insert.disp();
 return 0;
 }
+
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main (){
+    vector<int>vec={1,2,3};//0
+    cout<<vec[0]<<endl;//1 
+    return 0;
+} 
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main (){
+    vector<int>vec(5,0);
+    for(int i: vec){
+        cout<<i<<endl;  
+    }
+    
+    return 0;
+} 
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main (){
+    vector<char>vec={'a','b','c','d','e','f','g','h'};
+    cout <<"size="<<vec.size()<<endl;
+    for(char i: vec){
+        cout<<i<<endl;  
+    }
+    
+    return 0;
+} 
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main (){
+    vector<char>vec={'a','b','c','d','e','f','g','h'};
+    cout <<"size="<<vec.size()<<endl;
+    vec.push_back(25);
+    cout <<"size after push back="<<vec.size()<<endl;
+    for(char i: vec){
+        cout<<i<<endl;  
+    }
+    return 0;
+} 
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main (){
+    vector<char>vec={'a','b','c','d','e','f','g','h'};
+    cout <<"size="<<vec.size()<<endl;
+    vec.push_back(25);
+      vec.push_back(35);
+        vec.push_back(45);
+          vec.push_back(55);
+
+    cout <<"size after push back="<<vec.size()<<endl;
+    for(char i: vec){
+        cout<<i<<endl;  
+    }
+    return 0;
+}
+
+*/
+#include <iostream>
+#include <string>
+#include <unordered_map>
+#include <algorithm>
+using namespace std;
+
+int lengthOfLongestSubstring(string s) {
+    unordered_map<char, int> charIndex; 
+    int left = 0, maxLength = 0;
+
+    for (int right = 0; right < (int)s.size(); right++) {
+        if (charIndex.find(s[right]) != charIndex.end() && charIndex[s[right]] >= left) {
+            left = charIndex[s[right]] + 1;
+        }
+        charIndex[s[right]] = right;
+        maxLength = max(maxLength, right - left + 1);
+    }
+
+    return maxLength;
+}
+
+int main() {
+    string s;
+    cout << "Enter string: ";
+    getline(cin, s);
+    cout << "Length of longest substring without repeating characters: "
+         << lengthOfLongestSubstring(s) << endl;
+    return 0;
+}
+

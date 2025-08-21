@@ -1,5 +1,5 @@
 //  First Program 
-/* #include <iostream>
+ #include <iostream>
 
 int main()
 {
@@ -15,19 +15,19 @@ int main()
          std::cout << "ATM PIN denied.";
    }
    return 0;
-}*/
+}
 
 
 // second Program 
- /* # include <iostream>
+ # include <iostream>
 int main(){
      std::cout << "Codewithutkrisht!";
      return 0;
-}*/
+}
 
 
 // Third Program
-/* #include <iostream>
+#include <iostream>
 int main(){
   std::cout << "Enter your Name: ";
   std::string name;
@@ -35,11 +35,11 @@ int main(){
   std::cout << "Hello, " << name << "! Welcome to C++ programming." << std::endl;
   
    return 0;
-} */
+} 
 
 
 // Fourth Program 
-/* #include <iostream>
+ #include <iostream>
 using namespace std;
 int main(){
       int ch;
@@ -65,11 +65,11 @@ int main(){
             break;
       }
 
-} */
+} 
 
 
 // 5th Program 
-/* #include <iostream>
+#include <iostream>
 using namespace std;
 int main(){
      cout <<((10>5) && (20<5)) << endl; // Logical AND operator 
@@ -77,12 +77,12 @@ int main(){
      cout <<!(20>10); // Logical NOT operator
 
      return 0;
-} */
+} 
 
 
 // 6th Program 
 
-/* #include<iostream>
+#include<iostream>
 using namespace std;
 int main (){
       int a = 100;
@@ -93,13 +93,13 @@ int main (){
 }
 return 0;
 }
-*/
+
  
 
 // 7th Program 
 
 
-/* #include<iostream>
+ #include<iostream>
 using namespace std;
 int main (){
       
@@ -108,10 +108,11 @@ int main (){
       cout <<"utkrisht";
 }
 return 0;
-} */
+} 
+
 // 8th Program 
 
- /* #include<iostream>
+#include<iostream>
 using namespace std;
 int main (){
       int i = 1;
@@ -121,13 +122,12 @@ int main (){
       i++;
 }
 return 0;
-} */
+} 
 
 
  // 9th Preogram  
 
-
- /* #include <iostream>
+#include <iostream>
 using namespace std;
 int main(){
    
@@ -137,21 +137,21 @@ int main(){
             a++;
      } while (a <= 20);
      return 0;
-} */
+} 
 
 // 10th Program 
 
-/* #include <iostream>
+#include <iostream>
 using namespace std;
 int main(){
       cout<< "Hello utkrisht "<< endl;
       cout<<"Welcome to C ++ PROGRMAING LANGUAGE"<< endl;
 
-}*/
+}
 
 // 11th Program
 
-/*
+
 #include<iostream>
 using namespace std;
 int main (){
@@ -163,9 +163,9 @@ int main (){
        cout<<"kapil web developer"<<endl;
        return 0;
 } 
-*/
+
  // 12th program
- /*
+ 
  #include <iostream>
  using
       int arr[5]= {1,2,3,4,5};
@@ -175,7 +175,7 @@ int main (){
       }
       return 0;
  } 
- /*
+ 
 // 13th program 
 
 
@@ -208,7 +208,7 @@ int main(){
 
 
 // 15th Program 
-/*
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -219,12 +219,12 @@ int main(){
       return 0;
 }
 
-*/
+
  // 16th Program 
 
  // Program to assign data to members of a structure variable
 
-/* #include <iostream>
+ #include <iostream>
 using namespace std;
 
 struct Person
@@ -256,10 +256,10 @@ int main()
 
     return 0;
 }
-*/
+
 
 // 17th Program 
- /*
+ 
 #include <iostream>
 using namespace std;
 
@@ -292,9 +292,9 @@ int main()
 
     return 0;
 }
-*/
+
 // 18th Program 
-/*
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -392,4 +392,3 @@ int main (){
       }
       return 0; 
 }
-*/
