@@ -484,7 +484,6 @@ int main(){
 
 
 
-
 // object oriented programming lab program -1 
 // #include<bits/stdc++.h>
 #include<vector>
@@ -497,7 +496,7 @@ age (){
 num=0;
 }
 age (int a){
-num=a;
+num = static_cast<float>(a);
 }
 void disp(){
 cout<<num<<endl;
@@ -581,7 +580,7 @@ int main (){
     return 0;
 }
 
-*/
+
 #include <iostream>
 #include <string>
 #include <unordered_map>
@@ -603,6 +602,7 @@ int lengthOfLongestSubstring(string s) {
     return maxLength;
 }
 
+
 int main() {
     string s;
     cout << "Enter string: ";
@@ -611,4 +611,30 @@ int main() {
          << lengthOfLongestSubstring(s) << endl;
     return 0;
 }
+
+// Oopsfirstprogram 
+#include<bits/stdc++.h>
+using namespace std;
+class age
+{
+public:
+float num;
+age (){
+num=0;
+}
+age (int a){
+num=a;
+}
+void disp(){
+cout<<num<<endl;
+}
+};
+int main(){
+age age_default;
+age age_insert(20);
+age_default.disp();
+age_insert.disp();
+return 0;
+}
+*/
 
