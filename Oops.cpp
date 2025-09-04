@@ -81,7 +81,7 @@ int main(){
     email1.emailDisplay();
     return 0;
 }
-*/
+
 #include<iostream>
 using namespace std;
 
@@ -101,4 +101,78 @@ int main (){
     cout<<"Default Const Init Value is :"<<ag.disp()<<endl;
     return 0;
 }
-    
+
+// call destructor in derived class
+
+#include<iostream>
+using namespace std; 
+
+class parent{
+    public:
+    ~parent(){
+        cout<<"Destructor of parent called"<<endl;
+    }
+};
+class child: public parent{
+    public:
+    ~child(){
+        cout<<"Destructor invoked in  child class"<<endl;
+    }
+};
+
+int main(){
+    child c;
+    return 0;
+}
+
+*/
+// Demonstrate multiple inheritance
+#include <iostream>
+ using namespace std;
+class Password { 
+    protected:
+string password;
+
+
+Password() { cout << "Construct of Password invoked" << endl; }
+ void takePassword(string password) { this->password = password; } 
+ void pdisplay() { cout << this->password << endl; }
+};
+
+
+class Email { protected:
+string email;
+
+
+Email() { cout << "Construct of Email invoked" << endl; } 
+void takeEmail(string email) { this->email = email; } 
+void edisplay() { cout << this->email << endl; }
+};
+
+
+class Account : public Email, public Password {
+     public:
+int year;
+
+
+Account() { cout << "Constructed Account invoked" << endl; } 
+void takeAccount(string password, string email, int year) {
+takePassword(password); 
+takeEmail(email);
+this->year = year;
+}
+void accDisplay() {
+pdisplay(); 
+edisplay();
+cout << this->year << endl;
+}
+};
+
+
+int main() { Account obj1;
+obj1.takeAccount("123456", "245ICS052@gbu.ac.in", 2025); 
+obj1.accDisplay();
+return 0;
+}
+
+
