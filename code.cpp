@@ -636,6 +636,90 @@ age_default.disp();
 age_insert.disp();
 return 0;
 }
+
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        int n = s.size();
+        if (n == 0) return "";
+
+        int start = 0, maxLen = 1;
+
+        auto expand = [&](int left, int right) {
+            while (left >= 0 && right < n && s[left] == s[right]) {
+                if (right - left + 1 > maxLen) {
+                    start = left;
+                    maxLen = right - left + 1;
+                }
+                left--;
+                right++;
+            }
+        };
+
+        for (int i = 0; i < n; i++) {
+            expand(i, i);       // Odd-length palindrome
+            expand(i, i + 1);   // Even-length palindrome
+        }
+
+        return s.substr(start, maxLen);
+    }
+};
 */
+// Palindrome Leetcode Problem 
+#include <iostream>
+using namespace std;
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if (x < 0 || (x % 10 == 0 && x != 0)) return false;
 
+        int reversed = 0;
+        while (x > reversed) {
+            reversed = reversed * 10 + x % 10;
+            x /= 10;
+        }
+        return (x == reversed || x == reversed / 10);
+    }
+};
+int main(){
+    Solution s;
+    int num;
+    cout<<"Enter a number:";
+    cin>>num;
+    if(s.isPalindrome(num)){
+        cout<<num<<" is a palindrome number."<<endl;
+    } else {
+        cout<<num<<" is not a palindrome number."<<endl;
+    }
+    return 0;
+}
 
+//container with most water problem
+#include <iostream>
+#include <vector>
+using namespace std;
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        int left = 0, right = height.size() - 1;
+        int maxArea = 0;
+
+        while (left < right) {
+            int h = min(height[left], height[right]);
+            int w = right - left;
+            maxArea = max(maxArea, h * w);
+
+            if (height[left] < height[right])
+                left++;
+            else
+                right--;
+        }
+        return maxArea;
+    }
+};
+int main(){
+    Solution s;
+    vector<int> height = {1,8,6,2,5,4,8,3,7};
+    cout<<"Maximum area: "<<s.maxArea(height)<<endl;
+    return 0;
+}

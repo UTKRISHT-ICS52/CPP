@@ -125,7 +125,7 @@ int main(){
     return 0;
 }
 
-*/
+
 // Demonstrate multiple inheritance
 #include <iostream>
  using namespace std;
@@ -174,5 +174,5 @@ obj1.takeAccount("123456", "245ICS052@gbu.ac.in", 2025);
 obj1.accDisplay();
 return 0;
 }
-
+*/
 
