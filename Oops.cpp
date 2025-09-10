@@ -1,5 +1,6 @@
 // Lab 1st Program 
-/*#include<bits/stdc++.h>
+/*
+#include<bits/stdc++.h>
 using namespace std;
 class age
 {

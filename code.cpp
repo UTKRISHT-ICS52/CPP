@@ -664,7 +664,7 @@ public:
         return s.substr(start, maxLen);
     }
 };
-*/
+
 // Palindrome Leetcode Problem 
 #include <iostream>
 using namespace std;
@@ -721,5 +721,127 @@ int main(){
     Solution s;
     vector<int> height = {1,8,6,2,5,4,8,3,7};
     cout<<"Maximum area: "<<s.maxArea(height)<<endl;
+    return 0;
+}
+
+
+// object example in c++ 
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Car {
+public:
+    string brand;
+    int year;
+
+    void displayInfo() {
+        cout << "Brand: " << brand << ", Year: " << year << endl;
+    }
+};
+
+int main() {
+    Car myCar;
+    myCar.brand = "Tesla";
+    myCar.year = 2024;
+    myCar.displayInfo();
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+class Student {
+private:
+    int age;   
+
+public:
+    void setAge(int a) {   
+        if (a > 0) 
+            age = a;
+        else 
+            age = 0;
+    }
+
+    int getAge() {   
+        return age;
+    }
+};
+
+int main() {
+    Student s1;
+
+    s1.setAge(20);  
+    cout << "Student Age: " << s1.getAge() << endl;
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+class Animal {
+public:
+    void eat() {
+        cout << "This animal eats food." << endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void bark() {
+        cout << "The dog barks." << endl;
+    }
+};
+
+int main() {
+    Dog d1;
+    d1.eat();   
+    d1.bark();  
+
+    return 0;
+}
+
+*/
+
+#include <iostream>
+using namespace std;
+
+class Shape {
+public:
+
+    virtual void draw() = 0;  
+};
+
+
+class Circle : public Shape {
+public:
+    void draw() {
+        cout << "Drawing a Circle" << endl;
+    }
+};
+
+
+class Rectangle : public Shape {
+public:
+    void draw() {
+        cout << "Drawing a Rectangle" << endl;
+    }
+};
+
+int main() {
+    Shape* shape1 = new Circle();     
+    Shape* shape2 = new Rectangle();
+
+    shape1->draw();   
+    shape2->draw();   
+
+    delete shape1;
+    delete shape2;
+
     return 0;
 }
