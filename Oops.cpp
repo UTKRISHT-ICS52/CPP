@@ -82,7 +82,7 @@ int main(){
     email1.emailDisplay();
     return 0;
 }
-
+// 3rd program in OOPs 
 #include<iostream>
 using namespace std;
 
@@ -103,7 +103,8 @@ int main (){
     return 0;
 }
 
-// call destructor in derived class
+// call destructor in derived class // 4rd programm in OOPs 
+
 
 #include<iostream>
 using namespace std; 
@@ -127,7 +128,7 @@ int main(){
 }
 
 
-// Demonstrate multiple inheritance
+// Demonstrate multiple inheritance // 5th Pogram in OOPs 
 #include <iostream>
  using namespace std;
 class Password { 
@@ -175,5 +176,86 @@ obj1.takeAccount("123456", "245ICS052@gbu.ac.in", 2025);
 obj1.accDisplay();
 return 0;
 }
+
+// 6th program in OOPS
+// constructor call in deriverd class 
+#include<iostream>
+using namespace std; 
+class Animal{ public:
+    string species;
+    string color;
+    string sound;
+
+Animal(){
+    this->species="";
+    this->color="";
+    this->sound="";
+}
+void setcolor(string color){ this ->color=color;}
+void setSpecies(string species) { this->species=species;}
+void setSound(string sound) { this->sound=sound;}
+};
+class cat : public Animal {
+    public:
+    string name;
+    cat(){
+        this->name= "cat"; cout << " constructor invoked in cat class" << endl;
+    }
+    void  disp(){
+        cout << this->name << " :" << this ->color << this->species <<":" << this->sound << endl;
+    }
+};
+
+int main(){
+    cat c1;
+    c1.setcolor("black");
+    c1.setSpecies("cat species");
+    c1.setSound("meow meow");
+
+    c1.disp();
+    return 0;
+}
 */
+
+// 7th Program in OOPs 
+// destructor call in derived class
+#include<iostream>
+using namespace std; 
+class Animal{ public:
+    string species;
+    string color;
+    string sound;
+
+Animal(){
+    this->species="";
+    this->color="";
+    this->sound="";
+}
+void setcolor(string color){ this ->color=color;}
+void setSpecies(string species) { this->species=species;}
+void setSound(string sound) { this->sound=sound;}
+};
+class cat : public Animal {
+    public:
+    string name;
+    cat(){
+        this->name= "cat"; cout << " constructor invoked in cat class" << endl;
+    }
+    void  disp(){
+        cout << this->name << " :" << this ->color << this->species <<":" << this->sound << endl;
+    }
+    ~cat(){
+        cout<< "Destructor Invoked for class cat" <<endl;}
+    
+};
+
+int main(){
+    cat c1;
+    c1.setcolor("black");
+    c1.setSpecies("cat species");
+    c1.setSound("meow meow");
+
+    c1.disp();
+    return 0;
+}
 
