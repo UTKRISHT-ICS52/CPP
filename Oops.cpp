@@ -215,7 +215,7 @@ int main(){
     c1.disp();
     return 0;
 }
-*/
+
 
 // 7th Program in OOPs 
 // destructor call in derived class
@@ -258,4 +258,4 @@ int main(){
     c1.disp();
     return 0;
 }
-
+*/
