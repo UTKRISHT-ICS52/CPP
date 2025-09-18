@@ -260,7 +260,7 @@ int main(){
 }
 
 
-*/
+
 
 // 8th program in OOPs 
 // find area and volume of circle using class and object  
@@ -290,3 +290,44 @@ int main(){
     cout<<"Volume: "<<s1.getVolume()<<endl;
     return 0;
 }
+
+
+// 9th Program in OOPs
+// write a program to create a file  using file handling in C++
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main(){
+fstream af; 
+af.open("test.txt",ios::out); 
+if(!af){
+cout<<"File Not created"<<endl;
+}
+cout<<"File created succesfully"<<endl;
+
+
+return 0;
+}
+
+*/
+// 10th Program  in OOPs 
+// write a Program to append a content in a file.
+#include<iostream> 
+#include<fstream> 
+using namespace std; 
+int main(){
+fstream af; 
+af.open("test.txt",ios::app);
+
+string line="Hello! This is Utkrisht Patel";
+string line2="MY roll no.is 245ICS052";
+
+
+af<<line<<endl; af.close();
+af<<line2<<endl; af.close();
+
+cout<<"Sucessful"<<endl;
+ return 0;
+
+}
+
