@@ -258,4 +258,35 @@ int main(){
     c1.disp();
     return 0;
 }
+
+
 */
+
+// 8th program in OOPs 
+// find area and volume of circle using class and object  
+#include <iostream>
+using namespace std; 
+class Sphare{
+    public:
+    float radius;
+    Sphare(){
+        radius=0;
+    }
+    Sphare(float r){
+        radius=r;
+    }
+    float getArea(){
+        return 4*3.14*radius*radius;
+    }
+    float getVolume(){
+        return (4/3)*3.14*radius*radius*radius;
+    }
+};
+
+int main(){
+    Sphare s1;
+    s1.radius=5;
+    cout<<"Area: "<<s1.getArea()<<endl;
+    cout<<"Volume: "<<s1.getVolume()<<endl;
+    return 0;
+}

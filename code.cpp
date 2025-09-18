@@ -845,11 +845,12 @@ int main() {
 
     return 0;
 }
-*/
+
 
 #include<iostream>
 using namespace std;
 int main(){
-    cout << "shagun Raj vs utkrisht patel vs Anshu Raj" << endl ;
+    cout << "Utkrisht Patel" << endl ;
     return 0; 
 }
+*/
