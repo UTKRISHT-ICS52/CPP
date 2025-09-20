@@ -309,7 +309,7 @@ cout<<"File created succesfully"<<endl;
 return 0;
 }
 
-*/
+
 // 10th Program  in OOPs 
 // write a Program to append a content in a file.
 #include<iostream> 
@@ -330,4 +330,5 @@ cout<<"Sucessful"<<endl;
  return 0;
 
 }
+*/ 
 

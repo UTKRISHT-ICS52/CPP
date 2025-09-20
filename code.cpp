@@ -853,4 +853,164 @@ int main(){
     cout << "Utkrisht Patel" << endl ;
     return 0; 
 }
+
+
+// Declare Array within Class in c++
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    int marks[5]; // array of integers inside a class
+    string subjects[3]; // array of strings inside a class
+
+    void setMarks() {
+        for (int i = 0; i < 5; i++) {
+            cout << "Enter marks for subject " << i + 1 << ": ";
+            cin >> marks[i];
+        }
+    }
+
+    void displayMarks() {
+        cout << "Marks: ";
+        for (int i = 0; i < 5; i++) {
+            cout << marks[i] << " ";
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    Student s1; // object
+    s1.setMarks();
+    s1.displayMarks();
+    return 0;
+}
+
+
+
+// Array of Object in C++
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int age;
+
+    void input() {
+        cout << "Enter name: ";
+        cin >> name;
+        cout << "Enter age: ";
+        cin >> age;
+    }
+
+    void display() {
+        cout << "Name: " << name << ", Age: " << age << endl;
+    }
+};
+
+int main() {
+    Student s[3]; // array of 3 objects of Student
+
+    // Input details for each student
+    for (int i = 0; i < 3; i++) {
+        cout << "Enter details for student " << i + 1 << endl;
+        s[i].input();
+    }
+
+    // Display details
+    for (int i = 0; i < 3; i++) {
+        s[i].display();
+    }
+
+    return 0;
+}
+
+// Static memory Allocation in C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Static allocation of array
+    int arr[5];   // size fixed at compile time
+
+    for (int i = 0; i < 5; i++) {
+        arr[i] = i * 10;   // assign values
+    }
+
+    cout << "Static Array: ";
+    for (int i = 0; i < 5; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
+
+// Dynamic Memory Allocation in C++ 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter size of array: ";
+    cin >> n;
+
+    // Dynamic allocation
+    int* arr = new int[n];   // allocate array of size n
+
+    for (int i = 0; i < n; i++) {
+        arr[i] = (i + 1) * 5;
+    }
+
+    cout << "Dynamic Array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    // Free the memory
+    delete[] arr;
+
+    return 0;
+}
+
+
+// Call by Reference in c++
+#include <iostream>
+using namespace std;
+
+void update(int &n) {   // parameter passed by reference
+    n += 5;             // modifies actual variable
+}
+
+int main() {
+    int a = 10;
+    update(a);          // pass by reference
+    cout << "Value of a after update: " << a << endl;
+    return 0;
+}
+
 */
+// Return by Reference in C++
+#include <iostream>
+using namespace std;
+
+int& getElement(int arr[], int index) {
+    return arr[index];   // return reference to array element
+}
+
+int main() {
+    int numbers[5] = {10, 20, 30, 40, 50};
+
+    // modify 2nd element using return by reference
+    getElement(numbers, 1) = 99;
+
+    // print array
+    for (int i = 0; i < 5; i++) {
+        cout << numbers[i] << " ";
+    }
+    return 0;
+}
