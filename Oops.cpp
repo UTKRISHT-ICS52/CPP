@@ -331,4 +331,38 @@ cout<<"Sucessful"<<endl;
 
 }
 */
+// 11th Program in OOPs
+// To write a program to demonstrate friend function.
+#include<iostream> 
+#include<math.h>
+using namespace std;
+class Sphere{
+private:
+float radius;
+
+public:
+Sphere(int radius){
+this->radius=radius;
+}
+int getR(){
+return this->radius;
+}
+
+friend void surArea(Sphere);
+friend void surVol(Sphere);
+};
+void surArea(Sphere s)
+{
+    cout<<"Surface Area of sphere is : "<<4*3.14*s.radius*s.radius<<endl;
+
+}
+void surVol(Sphere s){
+    cout<<"Surface Volume of sphere is : "<<(4/3)*3.14*s.radius*s.radius*s.radius<<endl;
+}
+int main(){
+    Sphere s(12.3);
+    surArea(s);
+    surVol(s);
+    return 0; 
+}
 
